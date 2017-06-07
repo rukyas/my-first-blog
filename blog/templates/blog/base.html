@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Alicia</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+  </head>
+  <body>
+    <div class="encabezado">
+      <h1><a href="/">Las aventuras de Alicia en el país de las maravillas</a></h1>
+      <p>by Lewis Carroll</p>
+    </div>
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+
+    </body>
+</html>
